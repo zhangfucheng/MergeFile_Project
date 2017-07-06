@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>mergeFile</name>
+    </assembly>
+    <members>
+        <member name="T:mergeFile.Core.ControlInfor">
+            <summary>
+            文件内容说明类
+            </summary>
+        </member>
+        <member name="T:mergeFile.Core.Process">
+            <summary>
+            功能性函数
+            </summary>
+        </member>
+        <member name="M:mergeFile.Core.Process.isLeagalFile(System.String)">
+            <summary>
+            检查文件内容是否符合格式要求
+            </summary>
+            <param name="filepath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mergeFile.Core.Process.isMatchedPointId(System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.LinkedList{mergeFile.Core.PointInformation}},System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.LinkedList{mergeFile.Core.PointInformation}})">
+            <summary>
+            检查两个文件中的节点编号是否匹配
+            </summary>
+            <param name="pointDictionary1"></param>
+            <param name="pointDictionary2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mergeFile.Core.Process.readFile(System.String)">
+            <summary>
+            读取文件，将文件中关键点信息输出到字典中
+            </summary>
+            <param name="filepathname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mergeFile.Core.Process.writeFile(System.String,System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.LinkedList{mergeFile.Core.PointInformation}},System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.LinkedList{mergeFile.Core.PointInformation}})">
+            <summary>
+            写文件，将两个字典中节点信息，按照匹配关系重新写入文件
+            </summary>
+            <param name="filename"></param>
+            <param name="pointDictionary1"></param>
+            <param name="pointDictionary2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mergeFile.Core.Process.writeControlInfor(System.String,mergeFile.Core.ControlInfor,mergeFile.Core.ControlInfor)">
+            <summary>
+            写控制信息
+            </summary>
+            <param name="filename"></param>
+            <param name="file1ControlInfor"></param>
+            <param name="file2ControlInfor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:mergeFile.Core.Process.readControlInfor(System.String)">
+            <summary>
+            读取控制信息
+            </summary>
+            <param name="filepathname"></param>
+            <returns></returns>
+        </member>
+        <member name="T:mergeFile.Core.PointInformation">
+            <summary>
+            节点信息说明
+            </summary>
+        </member>
+        <member name="M:mergeFile.MergeForm.filepath1_Click(System.Object,System.EventArgs)">
+            <summary>
+            按钮点击事件，选择合并文件1,
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:mergeFile.MergeForm.filepath2_Click(System.Object,System.EventArgs)">
+            <summary>
+            按钮点击事件，选择合并文件2
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:mergeFile.MergeForm.merge_Click(System.Object,System.EventArgs)">
+            <summary>
+            执行合并任务事件，判断各种异常并抛出
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:mergeFile.MergeForm.openFileDialog">
+            <summary>
+            打开对话框选择文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:mergeFile.MergeForm.createFileDialog">
+            <summary>
+            打开对话框创建文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:mergeFile.MergeForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:mergeFile.MergeForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:mergeFile.MergeForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:mergeFile.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:mergeFile.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:mergeFile.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:mergeFile.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
